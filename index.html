@@ -13,7 +13,7 @@
       <nav class="nav container">
         <a href="/" class="logo">
           <i class='bx bxl-xing'></i>
-          <span>Name</span>
+          <span>Nombre</span>
         </a>
 
         <div id="menu" class="menu clase2 clase3">
@@ -23,19 +23,19 @@
 
           <ul class='menu__list'>
             <li class='menu__item'>
-              <a href='#' class='menu__link'>Inicio</a>
+              <a href='#hero' class='menu__link active'>Inicio</a>
             </li>
             <li class='menu__item'>
-              <a href='#' class='menu__link'>Acerca de Mí</a>
+              <a href='#about' class='menu__link'>Acerca de Mí</a>
             </li>
             <li class='menu__item'>
-              <a href='#' class='menu__link'>Habilidades</a>
+              <a href='#skills' class='menu__link'>Habilidades</a>
             </li>
             <li class='menu__item'>
-              <a href='#' class='menu__link'>Proyectos</a>
+              <a href='#projects' class='menu__link'>Proyectos</a>
             </li>
             <li class='menu__item'>
-              <a href='#' class='menu__link'>Contacto</a>
+              <a href='#contact' class='menu__link'>Contacto</a>
             </li>
           </ul>
 
@@ -44,14 +44,77 @@
           </a>
         </div>
 
-        <button type="button" id="btnOpen" class="btn btn-open" aria-label="abrir">
-          <i class='bx bx-menu'></i>
-        </button>
+        <div class="btns">
+          <button type="button" id="btnOpen" class="btn btn-open" aria-label="abrir">
+            <i class='bx bx-menu'></i>
+          </button>
+
+          <button type="button" id="btnTheme" class="btn btn-theme" aria-label="theme">
+            <i class='bx bxs-moon'></i>
+          </button>
+
+          <div class="btn-lang">
+            <a href='/en'>En</a>
+          </div>
+        </div>
       </nav>
     </header>
 
+    <main class="main">
+      <section id="hero" class="section hero">
+        <div class='container'>
+          <h1 class="hero__title">Hola, <span class="hero__animation">👋🏻</span> soy <br> <span class="hero__name">Jhon Doe</span></h1>
+          <p class="hero__description">
+            <span id="typing"></span>
+          </p>
+
+          <ul class='social'>
+            <li class='social__item'>
+              <a href='#' class='social__link' aria-label="linkedin">
+                <i class='bx bxl-linkedin'></i>
+              </a>
+            </li>
+            <li class='social__item'>
+              <a href='#' class='social__link' aria-label="github">
+                <i class='bx bxl-github'></i>
+              </a>
+            </li>
+            <li class='social__item'>
+              <a href='#' class='social__link' aria-label="twitter">
+                <i class='bx bxl-twitter'></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id='about' class="section about">
+        <div class='container'>
+          <h2 class='section section__title'>Acerca de mí</h2>
+        </div>
+      </section>
+
+      <section id='skills' class="section skills">
+        <div class='container'>
+          <h2 class='section section__title'>Habilidades</h2>
+        </div>
+      </section>
+
+      <section id='projects' class="section projects">
+        <div class='container'>
+          <h2 class='section section__title'>Proyectos</h2>
+        </div>
+      </section>
+
+      <section id='contact' class="section contact">
+        <div class='container'>
+          <h2 class='section section__title'>Contacto</h2>
+        </div>
+      </section>
+    </main>
 
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>
