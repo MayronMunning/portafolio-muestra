@@ -503,6 +503,57 @@ img {
   padding: 20px;
 }
 
+/* Contact */
+.contact__content {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact__text {
+  margin-bottom: 40px;
+}
+
+.contact__box {
+  border: 1px solid var(--btn-color);
+  border-radius: 5px;
+  padding: .5em 1em;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.contact__link {
+  text-decoration: none;
+  color: var(--btn-color);
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.contact__link p {
+  border-left: 2px solid var(--btn-color);
+  padding-left: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+}
+
+.footer__container {
+  border-top: 1px solid var(--btn-color);
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__social {
+  margin: 0;
+  width: auto;
+}
+
+
 @media (min-width: 900px) {
   :root {
     --header-height: 90px;
@@ -547,6 +598,10 @@ img {
   }
 
   .about p {
+    font-size: 1.25rem;
+  }
+
+  .contact__text {
     font-size: 1.25rem;
   }
 }
@@ -596,6 +651,10 @@ img {
 
   .skills__container {
     width: 60%;
+  }
+
+  .contact__text {
+    font-size: 1.5rem;
   }
 }
 
