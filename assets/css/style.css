@@ -1,18 +1,22 @@
 :root {
   --header-height: 60px;
-  --bg-body: #fff;
-  --txt-body: #000;
-  --bg-nav: #fff;
-  --color-primary: #fe7777;
-  --btn-color: #000;
+  --bg-body: #E6FF94;
+  --txt-body: #9DDE8B;
+  --bg-nav: #E6FF94;
+  --color-primary: #006769;
+  --btn-color: #006769;
+  --miverdeclaro: #9DDE8B;
+  --miverde:#40A578;
+  --miazul: #006769;
+  --micrema: #E6FF94;
 }
 
 body.dark {
-  --bg-body: #222;
-  --txt-body: #f0f0f0;
-  --bg-nav: #111;
-  --btn-color: #fff;
-  --color-primary: #fe7777;
+  --bg-body: #003369;
+  --txt-body: #009a50;
+  --bg-nav: #003369;
+  --btn-color: #0073ef;
+  --color-primary: #006769;
 }
 
 html {
@@ -29,8 +33,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-body);
-  color: var(--txt-body);
+  background-color: var(--miverde);
+  color: var(--miverdeclaro);
   font-family: sans-serif;
   margin: 0;
   font-size: 1rem;
@@ -71,7 +75,7 @@ img {
 }
 
 .btn {
-  color: var(--btn-color);
+  color: var(--micrema);
   border: none;
   padding: .75em 1.2em;
   cursor: pointer;
@@ -87,8 +91,8 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--bg-nav);
-  box-shadow: 0 0 25px #00000036;
+  background-color: var(--miverde);
+  box-shadow: 0 0 25px var(--micrema);
   z-index: 1000;
 }
 
@@ -100,25 +104,16 @@ img {
 }
 
 .logo {
-  color: var(--color-text);
-  font-size: 24px;
-  font-weight: 700;
   text-decoration: none;
   display: flex;
   align-items: center;
 }
 
-.logo i {
-  color: var(--color-primary, #000);
-  font-size: 38px;
-}
-
 .menu {
-  /* custome propertie */
-  /* --nombre-de-la-propiedad: valor; */
   display: flex;
   gap: 20px;
-  background-color: var(--bg-color);
+  background-color: var(--miverde);
+  color: var(--miverdeclaro);
 }
 
 .menu__list {
@@ -131,7 +126,7 @@ img {
 }
 
 .menu__link {
-  color: var(--color-text);
+  color: var(--miverdeclaro);
   font-weight: 600;
   text-decoration: none;
   transition: color .3s;
@@ -148,19 +143,17 @@ img {
 .btn-resume {
   background-color: var(--color-primary);
   border: 2px solid transparent;
-  color: #fff;
+  color: var(--micrema);
   text-decoration: none;
   transition: background-color .5s;
 }
 
 .btn-resume:hover {
-  background-color: #fff;
+  background-color: var(--miverdeclaro);
   border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  color: var(--miazul);
 }
 
-/* Dispositivos md Tablet */
-/* 0 - 768px */
 @media (max-width: 900px) {
   .menu {
     text-align: center;
@@ -246,11 +239,10 @@ img {
   gap: 15px;
 }
 
-.btn-open {
+ .btn-open {
   background-color: transparent;
-  font-size: 28px;
   padding: 0;
-}
+} 
 
 .btn-theme {
   background-color: transparent;
@@ -271,7 +263,7 @@ img {
 
 /* Hero */
 .hero {
-  background: linear-gradient(0deg, #0000009e, #000000c4 60%), url('../img/bg.jpg');
+  background: linear-gradient(0deg, #0000009e, #000000c4 60%), var(--miverde);
   background-size: cover;
   /* cover | contain */
   background-repeat: no-repeat;
@@ -308,9 +300,6 @@ img {
 }
 
 .hero__animation {
-  /* animation-name: saludo-animacion;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite; */
   display: inline-block;
   transform-origin: 70% 70%;
   animation: saludo-animacion 2.5s infinite;
@@ -450,7 +439,6 @@ img {
 
 .projects__card {
   background-color: #00000022;
-  /* width: 300px; */
   border-radius: 10px;
   overflow: hidden;
 }
@@ -657,62 +645,3 @@ img {
     font-size: 1.5rem;
   }
 }
-
-/* Unidades de Medida */
-/* Absolutas: px */
-
-/* Relativas: em, rem, %, vw, vh */
-/* .por {
-  background-color: lightblue;
-  width: 50%;
-}
-
-.por p {
-  width: 70%;
-  background-color: lightgreen;
-}
-
-.vw {
-  width: 50vw;
-  background-color: lightgreen;
-}
-
-.vw p {
-  position: relative;
-  top: 10px;
-  width: 70vw;
-  background-color: lightblue;
-} */
-
-/* .por {
-  background-color: lightblue;
-  width: 100%;
-  height: 50%;
-}
-
-.vw {
-  width: 100vw;
-  height: 100vh;
-  background-color: lightgreen;
-} */
-
-/* min-width de esta anchura para arriba */
-/* max-width de esta anchura para abajo */
-
-/* @media screen and (max-width: 200px) {
-  .header {
-    background-color: lightgreen;
-  }
-}
-
-@media screen and (min-width: 200px) {
-  .header {
-    background-color: lightcoral;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .header {
-    background-color: lightblue;
-  }
-} */
